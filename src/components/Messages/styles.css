@@ -1,0 +1,55 @@
+.formContainer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.formTextBox {
+    flex: 9;
+}
+
+.formButton {
+    flex: 1;
+    margin: 0px 50px 0px 50px;
+}
+
+.errorMessageContainer {
+    display: flex;
+    align-items: start;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: red;
+}
+
+.messagesContainer {
+    margin: 0px 0px 0px 0px;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.messageItem {
+    margin: 0px 0px 0px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messageContent {
+    font-size: 16px;
+}
+
+.messageDate {
+    font-size: 12px;
+    color: #555;
+}
