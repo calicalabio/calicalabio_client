@@ -112,7 +112,8 @@ function Messages() {
                         <span className="caliInt">{new Date(item.createdAt).getFullYear()}</span>                        
                     </div>
                     <div className="codeLine caliWide">
-                    <span className="caliSymbol">{`}`}</span>
+                        <span className="caliSymbol">{`}`}</span>
+                        <span className="caliWhite">;</span>
                     </div>
                     <div className="codeLineEmpty caliWide"></div>
                 </div>
