@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { URL } from '../../api/api.js'
 import './styles.css';
+import '../../common.css';
 
 function Messages() {
     const [messageList, setmessageList] = useState([]);
@@ -54,7 +55,9 @@ function Messages() {
                 if (!res.ok) {
                     displayError(data.error || res.statusText);
                 } else {
-                    setmessageList([data.newMessage, ...messageList]);
+                    var updatedMessageArray = [data.newMessage, ...messageList];
+                    updatedMessageArray.pop();
+                    setmessageList(updatedMessageArray);
                     setMessageContent("");
                     setErrorMessage("");
                     setIsProcessingPost(false);
@@ -80,14 +83,40 @@ function Messages() {
             
             <div className="errorMessageContainer">{errorMessage}</div>
             
-            <div className="messagesContainer">
-                {messageList.map(item => (
-                    <div className="messageContainer" key={item._id}>
-                        <div className="messageItem messageDate">{new Date(item.createdAt).toUTCString()}</div>
-                        <div className="messageItem messageContent">{item.content}</div>                        
+            {messageList.map(item => (
+                <div key={item._id} className="caliFont caliFontSmall">
+                    <div className="codeLine caliWide">
+                        <span className="caliKeyBlue">const</span>
+                        &nbsp;
+                        <span className="caliKeyBlue">message_{item._id}</span>
+                        &nbsp;
+                        <span className="caliWhite">=</span>
+                        &nbsp;
+                        <span className="caliSymbol">{`{`}</span>                    
                     </div>
-                ))}            
-            </div>        
+                    <div className="codeLine caliWide">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span className="caliVariable">content:</span>
+                        &nbsp;
+                        <span className="caliString">"{item.content}"</span>
+                        <span className="caliWhite">,</span>
+                    </div>
+                    <div className="codeLine caliWide">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span className="caliVariable">date:</span>
+                        &nbsp;
+                        <span className="caliInt">{new Date(item.createdAt).getDate()}</span>
+                        <span className="caliSymbolInner">{`/`}</span>
+                        <span className="caliInt">{new Date(item.createdAt).getMonth() + 1}</span>
+                        <span className="caliSymbolInner">{`/`}</span>
+                        <span className="caliInt">{new Date(item.createdAt).getFullYear()}</span>                        
+                    </div>
+                    <div className="codeLine caliWide">
+                    <span className="caliSymbol">{`}`}</span>
+                    </div>
+                    <div className="codeLineEmpty caliWide"></div>
+                </div>
+            ))}        
         </div>
   );
 }

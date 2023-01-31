@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url('./typefaces/DINPro-Bold_13934.ttf');
+}
+
+@font-face {
+    font-family: 'CascadiaCode-Regular';
+    src: url('./typefaces/CascadiaCode-Regular.ttf');
+}
+
+.codeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .codeLineEmpty {
+        height: 18px;
+        width: 650px;
+    }
+    
+    .codeLine {
+        margin: 0px 0px 10px 0px;
+        width: 650px;
+    }
+}
+
+.codeLineEmpty {
+    height: 18px;
+}
+
+.codeLine {
+    margin: 0px 0px 10px 0px;
+}
+
+.caliWide {
+    width: 100%;
+}
+
+.caliBackground {
+    background-color: #36393f;
+}
+
+.caliHeading {
+    font-family: 'DINPro-Bold';
+}
+
+.caliFont {
+    font-family: 'CascadiaCode-Regular';
+}
+
+.caliFontSmall {
+    font-size: 14px;
+}
+
+.caliString {
+    color: rgb(206, 145, 120);
+}
+
+.caliVariable {
+    color: rgb(156, 220, 254);
+}
+
+.caliVariablePrivate {
+    color: rgb(112, 154, 176);
+}
+
+.caliInt {
+    color: rgb(181, 206, 168);
+}
+
+.caliClass {
+    color: rgb(78, 201, 176);
+}
+
+.caliKeyBlue {
+    color: rgb(86, 156, 214);
+}
+
+.caliKeyPurple {
+    color: rgb(197, 134, 192);
+}
+
+.caliSymbol {
+    color: rgb(255, 212, 11);
+}
+
+.caliSymbolInner {
+    color: rgb(218, 112, 214);
+}
+
+.caliSymbolBlue {
+    color: rgb(26, 159, 255);
+}
+
+.caliWhite {
+    color: rgb(212, 212, 212);
+}
+
+.caliMethod {
+    color: rgb(220, 220, 170);
+}

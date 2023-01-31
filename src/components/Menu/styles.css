@@ -1,0 +1,17 @@
+.menu_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu_item {
+    width: 100px;
+    height: 100px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 25px 0px 25px;
+    cursor: pointer;
+}
+
+.menu_item_selected {
+    border-bottom: 5px solid #eee;
+};
