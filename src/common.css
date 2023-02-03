@@ -21,17 +21,44 @@
     }
     
     .codeLine {
-        margin: 0px 0px 10px 0px;
+        padding: 5px 0px 5px 0px;
         width: 650px;
     }
+
+    .codeLineIndent {
+        display: flex;
+        width: 650px;
+    }
+
+    .caliGuide {
+        border-left: 2px solid #555;
+    }
+}
+
+.caliHover {
+    cursor: pointer;
+}
+
+.caliCodeCollapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .codeLineEmpty {
     height: 18px;
 }
 
+.codeLineIndent {
+    display: flex;
+}
+
+.codeIndent {
+    padding: 5px 0px 5px 0px;
+}
+
 .codeLine {
-    margin: 0px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
 }
 
 .caliWide {
@@ -40,6 +67,10 @@
 
 .caliBackground {
     background-color: #36393f;
+}
+
+.caliHighlighted {
+    background-color: rgb(32, 45, 57);
 }
 
 .caliHeading {
@@ -52,6 +83,10 @@
 
 .caliFontSmall {
     font-size: 14px;
+}
+
+.caliGrey {
+    color: #aaa;
 }
 
 .caliString {

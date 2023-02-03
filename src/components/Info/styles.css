@@ -1,0 +1,23 @@
+.infoContainer {
+    margin: 100px 0px 0px 0px;
+}
+
+.icon {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin: 10px 15px 0px 0px;
+    cursor: pointer;
+}
+
+.icon-chevron-closed {    
+    background: url('./img/chevron_closed.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-chevron-open {
+    background: url('./img/chevron_open.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -24,7 +24,7 @@ const Skills = () => {
             &nbsp;
             <span className="caliSymbol">{`{`}</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliVariable">languages:</span>
             &nbsp;
@@ -33,7 +33,7 @@ const Skills = () => {
             <span className="caliSymbolInner">{`]`}</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliVariable">frameworks:</span>
             &nbsp;
@@ -42,7 +42,7 @@ const Skills = () => {
             <span className="caliSymbolInner">{`]`}</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliVariable">libraries:</span>
             &nbsp;
@@ -51,7 +51,7 @@ const Skills = () => {
             <span className="caliSymbolInner">{`]`}</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliVariable">databases:</span>
             &nbsp;
@@ -60,7 +60,7 @@ const Skills = () => {
             <span className="caliSymbolInner">{`]`}</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliVariable">other:</span>
             &nbsp;
@@ -82,17 +82,17 @@ const Skills = () => {
             &nbsp;
             <span className="caliSymbol">{`[`}</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliString">"Playing live music at functions and clubs"</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliString">"Freelance digital art"</span>
             <span className="caliWhite">,</span>
         </div>
-        <div className="codeLine">
+        <div className="codeLine caliGuide">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="caliString">"Making and selling art at conventions"</span>
         </div>

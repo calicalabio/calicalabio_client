@@ -1,10 +1,9 @@
 import React from 'react';
-import './styles.css';
 import '../../common.css';
 
-const AboutMe = () => {
-    return <div className="caliFont codeBlock aboutMeSection">
-        <div className="codeLine">
+const AboutMeContent = (props) => {
+    return <div className="caliFont codeBlock">
+        <div className="codeLine caliHover" onClick={() => props.onCodeClick()}>
             <span className="caliKeyPurple">export</span>
             &nbsp;
             <span className="caliKeyBlue">class</span>
@@ -161,7 +160,8 @@ const AboutMe = () => {
         <div className="codeLine">            
             <span className="caliSymbol">{`}`}</span>
         </div>
+        <div className="codeLineEmpty"></div>
     </div>
 }
 
-export default AboutMe;
+export default AboutMeContent;
