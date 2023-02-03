@@ -20,6 +20,7 @@ const AboutMeContentCollapsed = (props) => {
         </div>
         <div className="codeLine">            
             <span className="caliSymbol">{`}`}</span>
+            <span className="caliWhite">;</span>
         </div>
         <div className="codeLineEmpty"></div>
     </div>

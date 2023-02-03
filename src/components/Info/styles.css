@@ -2,22 +2,23 @@
     margin: 100px 0px 0px 0px;
 }
 
-.icon {
+.icon-container {
     display: block;
     height: 15px;
     width: 15px;
-    margin: 10px 15px 0px 0px;
-    cursor: pointer;
+    margin: 10px 15px 0px 0px;    
 }
 
 .icon-chevron-closed {    
     background: url('./img/chevron_closed.png');
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 .icon-chevron-open {
     background: url('./img/chevron_open.png');
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
