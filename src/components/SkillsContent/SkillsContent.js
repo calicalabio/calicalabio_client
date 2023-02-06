@@ -6,7 +6,7 @@ const SkillsContent = (props) => {
         <div className="codeLine caliHover" onClick={() => props.onCodeClick()}>
             <span className="caliKeyBlue">let</span>
             &nbsp;
-            <span className="caliKeyBlue">skills</span>
+            <span className="caliVariable">skills</span>
             &nbsp;
             <span className="caliKeyBlue">=</span>
             &nbsp;
